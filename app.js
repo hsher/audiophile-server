@@ -61,7 +61,11 @@ app.use('/upload', express.static('./upload'));
 
 const start = () => {
   try {
-    app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+    // app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+    app.listen({ port: PORT, host: '0.0.0.0' }, () => {
+      console.log('🚀 HTTP server ready');
+      });
+    );
   } catch(e) {
     console.log(e)
   }
