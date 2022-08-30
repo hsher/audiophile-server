@@ -34,6 +34,7 @@ const socFile = './database/soc.json';
 const ordersFile = './database/users/orders.json';
 const httpServer = http.createServer(app); //TODO: for what????  httpServer.listen...
 const PORT = process.env.PORT;
+console.log(PORT, "; 111");
 let brands = JSON.parse(fs.readFileSync(brandsFile));
 let types = JSON.parse(fs.readFileSync(typesFile));
 let colors = JSON.parse(fs.readFileSync(colorsFile));
