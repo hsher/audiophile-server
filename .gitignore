@@ -5,5 +5,6 @@
 node_modules/
 package-lock.json
 .DS_Store
+.env
 
 # TODO: need to add database users tokens and smth else
